@@ -1,36 +1,38 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+Overview
+--------
 
-First, run the development server:
+This project is an **incremental, from-first-principles implementation of a diff engine**, similar in spirit to how tools like **Git diff**, editors, and document comparison systems work.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+The goal is **not** to jump directly to a final optimized solution, but to **build the system step by step**, understanding _why_ each algorithm exists and _what problem it solves_.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+We are treating this as a **real engineering project**, developed in phases.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+What are we building?
+---------------------
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+I are building a **Diff engine Like Git Diff** Where i can compare two files and know the changes
 
-## Learn More
+Diff Engine (Phase 1)
+=====================
 
-To learn more about Next.js, take a look at the following resources:
+What I have done?
+---------------------
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+I have builded a simple **string diff engine** that:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+* Takes two strings: an **old version** and a **new version**
 
-## Deploy on Vercel
+* Computes the **minimal and meaningful differences** between them
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+* Outputs those differences as structured **diff operations**, not just text
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+These diff operations can later be:
+
+* Rendered in a UI
+
+* Converted into patches
+
+* Used for undo/redo
+
+* Extended to file diffs, JSON diffs, or collaborative editing
