@@ -36,3 +36,8 @@ These diff operations can later be:
 * Used for undo/redo
 
 * Extended to file diffs, JSON diffs, or collaborative editing
+  
+  <img width="1365" height="861" alt="Screenshot from 2026-01-28 10-58-30" src="https://github.com/user-attachments/assets/d72bce7c-9c2b-4488-8daf-a80777f2b8fd" />
+
+
+  
