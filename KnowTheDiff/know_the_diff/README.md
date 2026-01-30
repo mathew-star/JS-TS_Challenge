@@ -25,6 +25,8 @@ I have built a simple **string diff engine** that:
 
 * Outputs those differences as structured **diff operations**, not just text
 
+<img width="1365" height="861" alt="Screenshot from 2026-01-28 10-58-30" src="https://github.com/user-attachments/assets/d72bce7c-9c2b-4488-8daf-a80777f2b8fd" />
+
 As a next step
 ----------------
 
@@ -34,14 +36,6 @@ Here are the issues with that :
 
 * Issue 1: Line insertion shifts everything
 
-<<<<<<< HEAD
-* Extended to file diffs, JSON diffs, or collaborative editing
-  
-  <img width="1365" height="861" alt="Screenshot from 2026-01-28 10-58-30" src="https://github.com/user-attachments/assets/d72bce7c-9c2b-4488-8daf-a80777f2b8fd" />
-
-
-  
-=======
 * Issue 2: Deletions cause the same
 
 * Issue 3: Move ≠ Modify -> Treats all lines as modified no concept of “movement”
@@ -49,4 +43,3 @@ Here are the issues with that :
 * Issue 4: False “modify” detection
 
 Like this there are some edge cases yet to get be reached , so let see what next can be done here to imporove before this ,before we jump on to the big giant algos(like MYERS ALGO)..
->>>>>>> 57bdc5d (know_diff:feat: added line_diff helper and updated the UI)
