@@ -1,5 +1,9 @@
 import { DiffOp } from "../Types/index";
-
+/* 
+*This helper funtions for find the longest comman subsequence using dynamic programing with Time complexity of O(m * n)
+* 
+*
+* */
 function build_lcs(str1: string, str2: string) {
   const m = str1.length;
   const n = str2.length;
@@ -23,6 +27,11 @@ function build_lcs(str1: string, str2: string) {
 
 }
 
+
+/* 
+*This will help us to extract the subsequence from the dp table , we go from bottom to top
+*
+* */
 
 function extract_lcs(str1: string, str2: string, dp: number[][]): string {
 
@@ -48,6 +57,12 @@ function extract_lcs(str1: string, str2: string, dp: number[][]): string {
 }
 
 
+/*
+* now we have found the subsequence , we will find the diff with old string and new string .
+* the diffop type have types and values which we will use to track now ..
+*
+*
+* */
 
 
 function diff_using_lcs(oldStr: string, newStr: string, lcs: string): DiffOp[] {
