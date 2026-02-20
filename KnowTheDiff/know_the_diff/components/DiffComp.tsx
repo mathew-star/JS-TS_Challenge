@@ -54,7 +54,7 @@ export default function DiffComp() {
       <form onSubmit={handleSubmit} className="flex flex-col gap-4 mb-4">
         <div className='flex gap-3 mb-3'>
           <textarea
-            type="text"
+            
             value={str1}
             onChange={(e) => setStr1(e.target.value)}
             className="p-3 border"
@@ -62,7 +62,7 @@ export default function DiffComp() {
             rows={4} cols={80}
           ></textarea>
           <textarea
-            type="text"
+          
             value={str2}
             onChange={(e) => setStr2(e.target.value)}
             className="p-3 border"
