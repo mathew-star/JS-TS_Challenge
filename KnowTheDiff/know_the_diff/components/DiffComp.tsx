@@ -59,7 +59,7 @@ export default function DiffComp() {
             onChange={(e) => setStr1(e.target.value)}
             className="p-3 border"
             placeholder="First string"
-            rows="4" cols="80"
+            rows={4} cols={80}
           ></textarea>
           <textarea
             type="text"
@@ -67,7 +67,7 @@ export default function DiffComp() {
             onChange={(e) => setStr2(e.target.value)}
             className="p-3 border"
             placeholder="Second string"
-            rows="4" cols="80"
+            rows={4} cols={80}
           ></textarea>
         </div>
 
