@@ -1,12 +1,9 @@
-import DiffComp from "@/components/DiffComp"
+import DiffEditorPage from "@/components/DiffEditor";
 
 export default function Home() {
-  
-
   return (
-      <div className="min-h-screen flex flex-col gap-3 justify-center items-center">
-        <DiffComp/> 
-      </div>
-
+    <main className="min-h-screen bg-background">
+      <DiffEditorPage />
+    </main>
   );
 }
